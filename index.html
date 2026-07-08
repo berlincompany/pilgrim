@@ -7,8 +7,8 @@
 <meta name="robots" content="index, follow">
 <meta name="description" content="Pilgrim Kayak – Baie de Somme . Randonnées privées en kayak de mer · Phoques, prés salés & grand large">
 <link rel="icon" type="image/png" href="img/favicon.png">
-<link rel="canonical" href="">
-<link rel="alternate" hreflang="fr" href="" />
+<link rel="canonical" href="https://www.kayakbaiedesomme.fr/">
+<link rel="alternate" hreflang="fr" href="https://www.kayakbaiedesomme.fr/" />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 
 
@@ -16,14 +16,14 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Pilgrim Kayak – Baie de Somme">
 <meta property="og:description" content="Pilgrim Kayak – Baie de Somme . Randonnées privées en kayak de mer · Phoques, prés salés & grand large">
-<meta property="og:url" content="">
-<meta property="og:image" content="">
+<meta property="og:url" content="https://www.kayakbaiedesomme.fr/">
+<meta property="og:image" content="https://www.kayakbaiedesomme.fr/img/MatthieuCornu2.jpg">
 <meta property="og:locale" content="fr_FR">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Pilgrim Kayak – Baie de Somme">
 <meta name="twitter:description" content="Pilgrim Kayak – Baie de Somme . Randonnées privées en kayak de mer · Phoques, prés salés & grand large">
-<meta name="twitter:image" content="">
+<meta name="twitter:image" content="https://www.kayakbaiedesomme.fr/img/MatthieuCornu2.jpg">
 
 <!-- JSON-LD en dernier, juste avant la fermeture -->
  <script type="application/ld+json">
@@ -31,27 +31,39 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Pilgrim Kayak – Baie de Somme",
-  "description": "Pilgrim Kayak – Baie de Somme . Randonnées privées en kayak de mer · Phoques, prés salés & grand large",
-  "url": "",
+  "description": "Pilgrim Kayak – Baie de Somme . Randonnées privées en kayak de mer · Phoques, prés salés & grand large . Ouvert sur réservation",
+  "url": "https://www.kayakbaiedesomme.fr/",
   "telephone": "+33618427116",
   "address": [
     {
-      "@type": "PostalAddress",
-      "streetAddress": "",
-      "addressLocality": "",
-      "postalCode": "",
-      "addressCountry": "FR"
-    }
-	],
-  "geo": [
+	  "@type": "PostalAddress",
+	  "addressLocality": "Baie de Somme",
+	  "addressCountry": "FR"    
+	},
 	{
-	  "@type": "GeoCoordinates",
-	  "latitude": "",
-	  "longitude": ""
+	  "@type": "PostalAddress",
+	  "addressLocality": "Saint-Valery-sur-Somme",
+	  "postalCode": "80230",
+	  "addressCountry": "FR"    
 	}
-  ],
-  "openingHours": "",
-  "image": ""
+
+	],
+	"geo": [
+	  {
+		"@type": "GeoCoordinates",
+		"name": "Baie de Somme",
+		"latitude": "50.201389",
+		"longitude": "1.626944"
+	  },
+	  {
+		"@type": "GeoCoordinates",
+		"name": "Saint-Valery-sur-Somme",
+		"latitude": "50.186683",
+		"longitude": "1.628522"
+	  }
+	],
+ 
+  "image": "https://www.kayakbaiedesomme.fr/img/MatthieuCornu2.jpg"
 }
 </script>
 
@@ -139,7 +151,7 @@
   }
   .hero h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 00clamp(3.5rem, 8vw, 7rem);
+    font-size: clamp(3.5rem, 8vw, 7rem);
     font-weight: 300; line-height: 1.05;
     color: white; letter-spacing: 0.02em;
     margin-bottom: 0.3rem;
@@ -311,17 +323,6 @@
     margin-bottom: 1rem; font-size: 0.9rem; color: var(--deep);
   }
   .contact-detail .icon { font-size: 1.2rem; width: 30px; }
-  .contact-form { display: flex; flex-direction: column; gap: 1.2rem; }
-  .contact-form input, .contact-form textarea, .contact-form select {
-    border: 1px solid rgba(26,46,59,0.2); background: white;
-    padding: 1rem 1.2rem; font-family: 'Jost', sans-serif;
-    font-size: 0.9rem; color: var(--deep); outline: none;
-    transition: border-color 0.3s;
-  }
-  .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus {
-    border-color: var(--accent);
-  }
-  .contact-form textarea { height: 120px; resize: vertical; }
   .contact-direct {
     display: flex; flex-direction: column; gap: 1.5rem;
     justify-content: center; height: 100%;
@@ -349,13 +350,6 @@
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem; font-weight: 500;
   }
-  .btn-submit {
-    background: var(--deep); color: white; border: none;
-    padding: 1rem 2rem; cursor: pointer; font-family: 'Jost', sans-serif;
-    letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.78rem;
-    transition: background 0.3s;
-  }
-  .btn-submit:hover { background: var(--accent); }
 
   /* FOOTER */
   footer {
@@ -422,12 +416,7 @@
     <p class="section-label">Nos formules</p>
     <h2>Des sorties sur-mesure, rien que pour vous</h2>
     <p>Toutes nos randonnées sont privées, maximum 2 personnes, et menées par un guide diplômé d'État</p>
-<!--<ul class="consignes-list">
-      <li><span class="consigne-icon">🧍</span><span>Ouvert aux personnes non-sédentaires, peu importe le niveau en kayak</span></li>
-      <li><span class="consigne-icon">🏊</span><span>Attestation de capacité à nager plus de 25 mètres à fournir avant la sortie</span></li>
-      <li><span class="consigne-icon">🦺</span><span>Équipement complet fourni : gilet de sauvetage, pagaie, kayak de mer conforme à la division 245</span></li>
-      <li><span class="consigne-icon">⛈️</span><span>Sortie pouvant être annulée à tout moment par le moniteur en fonction des conditions météo</span></li>
-    </ul>-->
+
   </div>
   <div class="cards">
     <div class="card">
@@ -441,14 +430,14 @@
       <p class="card-duration">⏱ 2 heures</p>
       <h3>Prés Salés</h3>
       <p>Une escapade dans les prés salés, ce labyrinthe de chenaux bordé de végétation sauvage. Une découverte intimiste au rythme des marées, ouverte à tous niveaux.</p>
-      <div class="card-price">40€ <span>/ personne</span></div>
+      <br><div class="card-price">40€ <span>/ personne</span></div>
       <p class="card-note">Tout niveau · Personnes non-sédentaires · Matériel inclus</p>
     </div>
 	<div class="card">
       <p class="card-duration">⏱ 2 heures</p>
       <h3>Marée descendante</h3>
-      <p>blabla à prévoir</p>
-      <div class="card-price">40€ <span>/ personne</span></div>
+      <p>Une escapade au milieu des bancs  de sable via le fleuve qui se fraye un chemin. Ambiance "On a marché sur la lune! Et navigué aussi!"</p>
+      <br><br><div class="card-price">40€ <span>/ personne</span></div>
       <p class="card-note">Tout niveau · Personnes non-sédentaires · Matériel inclus</p>
     </div>
   </div>
@@ -495,7 +484,7 @@
   <div class="galerie-grid">
 	<img src="img/phoque1.jpg" alt="Phoque en Baie de Somme"/>
 	<img src="img/MatthieuCornu.jpg" alt="Kayak Matthieu Cornu Baie de Somme"/>
-	<img src="img/phoque2.jpg" alt="Kayak Matthieu Cornu Baie de Somme"/>
+	<img src="img/phoque2.jpg" alt="Phoque en Baie de Somme"/>
 
    </div>
 </section>
@@ -523,20 +512,14 @@
     </div>								
  </div>
   <div class="contact-direct">
-    <a href="tel:0618427116">
+    <a href="tel:+33618427116">
       <span class="direct-icon">☏</span>
       <span>
         <span class="direct-label">Téléphone</span><br>
         <span class="direct-value">06 18 42 71 16</span>
       </span>
     </a>
-    <!--<a href="mailto:matthieu@gmail.com">
-      <span class="direct-icon">✉️</span>
-      <span>
-        <span class="direct-label">Email</span>
-        <span class="direct-value">math@gmail.com</span>
-      </span>
-    </a>-->
+
   </div>
 </section>
 
